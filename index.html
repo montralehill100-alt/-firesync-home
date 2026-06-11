@@ -17,7 +17,13 @@ a { color: inherit; text-decoration: none; }
 
 /* NAV */
 nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 100; }
+.nav-brand { display: flex; align-items: center; gap: 11px; }
+.nav-logo-img { height: 30px; width: 30px; border-radius: 7px; box-shadow: 0 0 14px -4px var(--fire); }
 .nav-logo { font-family: 'Bebas Neue'; font-size: 24px; letter-spacing: 3px; color: var(--fire); }
+.feature-ico { width: 42px; height: 42px; border-radius: 10px; border: 1px solid var(--border); background: #111; display: flex; align-items: center; justify-content: center; color: var(--fire); margin-bottom: 14px; }
+.feature-ico svg { width: 22px; height: 22px; }
+.footer-brand { display: flex; align-items: center; gap: 10px; }
+.footer-logo-img { height: 24px; width: 24px; border-radius: 6px; }
 .nav-links { display: flex; gap: 28px; font-size: 11px; letter-spacing: 2px; color: var(--muted); }
 .nav-links a:hover { color: var(--text); }
 .nav-cta { background: var(--fire); color: #000; border: none; border-radius: 6px; padding: 9px 20px; font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; cursor: pointer; box-shadow: 0 0 20px -6px var(--fire); }
@@ -97,7 +103,7 @@ footer { padding: 48px 40px; border-top: 1px solid var(--border); display: flex;
 <body>
 
 <nav>
-  <div class="nav-logo">FIRESYNC</div>
+  <div class="nav-brand"><img class="nav-logo-img" src="/logo.svg" alt="FireSync" /><div class="nav-logo">FIRESYNC</div></div>
   <div class="nav-links">
     <a href="#features">Features</a>
     <a href="#tips">Tip System</a>
@@ -130,42 +136,42 @@ footer { padding: 48px 40px; border-top: 1px solid var(--border); display: flex;
   <div class="section-sub">One platform. Every screen from front of house to back, guest to exec. No duct tape required.</div>
   <div class="features">
     <div class="feature highlight">
-      <div class="feature-icon">🔥</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c.6 2.8 3 4 3 7a3 3 0 1 1-6 0c0-1.3.6-2.2 1.4-2.9C10.1 8.9 11 8 12 3z"/></svg></div>
       <div class="feature-title">Live Kitchen Display (KDS)</div>
       <div class="feature-desc">Station-level KDS with real-time order tracking, fire timers, and bump-to-complete. Orders route automatically by station. SMS alerts on bump.</div>
     </div>
     <div class="feature highlight">
-      <div class="feature-icon">💰</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
       <div class="feature-title">Smart Tip Pools</div>
       <div class="feature-desc">Three distribution methods — Weighted Hours, Sales %, or Equal Hours. Day-part pools, live preview before you commit, auto-assign on clock-in. Staff see their earnings in real time.</div>
     </div>
     <div class="feature highlight">
-      <div class="feature-icon">📱</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></svg></div>
       <div class="feature-title">Guest Ordering</div>
       <div class="feature-desc">QR-code table ordering with live kitchen load indicators. Guests see real-time cook progress and get notified the moment their order is ready.</div>
     </div>
     <div class="feature">
-      <div class="feature-icon">⏱️</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
       <div class="feature-title">PIN-Based Time Clock</div>
       <div class="feature-desc">Staff clock in with a PIN. Default tip pool auto-assigns on punch. Shift history, overtime visibility, and clean payroll exports.</div>
     </div>
     <div class="feature">
-      <div class="feature-icon">📊</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v16h16"/><path d="M8 16v-4M12 16V8M16 16v-6"/></svg></div>
       <div class="feature-title">Analytics & Reports</div>
       <div class="feature-desc">Labor cost, covers, revenue per cover, station throughput. Export tip distributions to CSV for any date range — payroll-ready in one click.</div>
     </div>
     <div class="feature">
-      <div class="feature-icon">🧾</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16M4 16h16"/><circle cx="9" cy="8" r="2.2"/><circle cx="15" cy="16" r="2.2"/></svg></div>
       <div class="feature-title">Manager Portal</div>
       <div class="feature-desc">Real-time order queue, kitchen controls, shift management, and tip entry — all from one screen. Role-gated so staff only see what they need.</div>
     </div>
     <div class="feature">
-      <div class="feature-icon">📦</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></div>
       <div class="feature-title">Inventory & Invoices</div>
       <div class="feature-desc">Track stock levels and review vendor invoices without leaving the platform. Designed for operators who want to own their cost of goods.</div>
     </div>
     <div class="feature">
-      <div class="feature-icon">🏗️</div>
+      <div class="feature-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
       <div class="feature-title">Platform Admin</div>
       <div class="feature-desc">Multi-location management, per-restaurant plan control, and billing oversight from one admin dashboard.</div>
     </div>
@@ -194,7 +200,7 @@ footer { padding: 48px 40px; border-top: 1px solid var(--border); display: flex;
     </div>
   </div>
   <div style="margin-top: 28px; background: #0a140a; border: 1px solid #4ade8033; border-radius: 10px; padding: 16px 20px; font-size: 11px; color: #4ade80; line-height: 1.7;">
-    📋 <strong>H.R.1 Ready (2025–2028):</strong> Under the Tax Cuts and Jobs Act extension, tip income is federally tax-exempt. FireSync tracks gross tip earnings per employee per shift — screenshot-ready for tax records.
+    <strong>H.R.1 Ready (2025–2028):</strong> Under the Tax Cuts and Jobs Act extension, tip income is federally tax-exempt. FireSync tracks gross tip earnings per employee per shift — screenshot-ready for tax records.
   </div>
 </section>
 
@@ -252,12 +258,12 @@ footer { padding: 48px 40px; border-top: 1px solid var(--border); display: flex;
 </section>
 
 <footer>
-  <div class="footer-logo">FIRESYNC</div>
+  <div class="footer-brand"><img class="footer-logo-img" src="/logo.svg" alt="FireSync" /><div class="footer-logo">FIRESYNC</div></div>
   <div class="footer-links">
     <a href="https://app.getfiresync.net">App Login</a>
     <a href="mailto:hello@getfiresync.net">Contact</a>
   </div>
-  <div class="footer-legal">© 2025 FireSync LLC · Mesa, AZ · Built for operators, by operators</div>
+  <div class="footer-legal">© 2026 FireSync LLC · Mesa, AZ · Built for operators, by operators</div>
 </footer>
 
 </body>
